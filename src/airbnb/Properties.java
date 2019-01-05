@@ -6,12 +6,13 @@
 package airbnb;
 
 /**
- *
- * @author USER
+  * @author USER
  */
-public class Owner extends People {
+public class Properties {
+    public int num_propertie; 
+    public Owner owner; 
+    public String address; 
+    public int dailycost; 
     
-    public Owner(String name, String address, int fiscal_number, String birthdate) {
-        super(name, address, fiscal_number, birthdate);
-    } 
+    
 }
