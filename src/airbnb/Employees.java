@@ -5,10 +5,7 @@
  */
 package airbnb;
 
-/**
- *
- * @author USER
- */
+
 public class Employees extends People implements Tarefas {
     
     public Employees(String name, String address, int fiscal_number, String birthdate) {

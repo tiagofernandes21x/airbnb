@@ -20,17 +20,20 @@ public class Viatura {
     private String plate;   // Matricula
     private String model;    // Modelo
     private String brand;    // Marca
-    private Employees employee;  
+    private Employees employe;
+
+  
+      
   
     
     //construtor
 
-    public Viatura(String plate, String model, String brand, String registdate, List utilizationMap) {
+    public Viatura(String plate, String model, String brand, Employees employe) {
         this.plate = plate;
         this.model = model;
         this.brand = brand;
-        this.employee = employee; 
-    }
+        this.employe = employe; 
+            }
     
 
     
@@ -39,6 +42,62 @@ public class Viatura {
     
     
     //encapsulamento
+
+    /**
+     * @return the plate
+     */
+    public String getPlate() {
+        return plate;
+    }
+
+    /**
+     * @param plate the plate to set
+     */
+    public void setPlate(String plate) {
+        this.plate = plate;
+    }
+
+    /**
+     * @return the model
+     */
+    public String getModel() {
+        return model;
+    }
+
+    /**
+     * @param model the model to set
+     */
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    /**
+     * @return the brand
+     */
+    public String getBrand() {
+        return brand;
+    }
+
+    /**
+     * @param brand the brand to set
+     */
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    /**
+     * @return the employe
+     */
+    public Employees getEmploye() {
+        return employe;
+    }
+
+    /**
+     * @param employe the employe to set
+     */
+    public void setEmploye(Employees employe) {
+        this.employe = employe;
+    }
 
     
     
