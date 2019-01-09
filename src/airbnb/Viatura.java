@@ -20,7 +20,7 @@ public class Viatura {
     private String plate;   // Matricula
     private String model;    // Modelo
     private String brand;    // Marca
-    private Employees employe;
+    
 
   
       
@@ -28,11 +28,11 @@ public class Viatura {
     
     //construtor
 
-    public Viatura(String plate, String model, String brand, Employees employe) {
+    public Viatura(String plate, String model, String brand) {
         this.plate = plate;
         this.model = model;
         this.brand = brand;
-        this.employe = employe; 
+        
             }
     
 
@@ -85,21 +85,7 @@ public class Viatura {
         this.brand = brand;
     }
 
-    /**
-     * @return the employe
-     */
-    public Employees getEmploye() {
-        return employe;
-    }
-
-    /**
-     * @param employe the employe to set
-     */
-    public void setEmploye(Employees employe) {
-        this.employe = employe;
-    }
-
-    
+ 
     
     
     
