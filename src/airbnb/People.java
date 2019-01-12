@@ -18,10 +18,10 @@ import java.util.logging.Logger;
  * @author USER
  */
 public abstract class People {
-    String name;
+    private String name;
     private String address; 
     private int fiscal_number; 
-    private String birthdate; 
+    private Date birthdate; 
 
  
 // Construtor
@@ -30,12 +30,11 @@ public abstract class People {
         this.name = name;
         this.address = address;
         this.fiscal_number = fiscal_number;
-        this.birthdate = birthdate;
-        //try {
-            //this.birthdate = new SimpleDateFormat("dd/MM/yyyy").parse(birthdate);
-       //} catch (ParseException ex) {
-            //Logger.getLogger(People.class.getName()).log(Level.SEVERE, null, ex);
-        //}
+        try {
+            this.birthdate = new SimpleDateFormat("dd/MM/yyyy").parse(birthdate);
+        } catch (ParseException ex) {
+            Logger.getLogger(People.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
   
     

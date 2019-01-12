@@ -1,33 +1,36 @@
-﻿/*
+/*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
- * and  open the template in the editor.
+ * and open the template in the editor.
  */
 package airbnb;
 
+import java.time.LocalDate;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;   // para fazer a data do regito da viatura
+import java.time.LocalDate;      //Saber a data Actual
 import java.util.List;
 import java.util.Date;
 import java.util.Calendar;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 /**
  *
  * @author USER
  */
-public class Guest extends People {
+public class CalculateAge {
 
-    public Guest(String name, String address, int fiscal_number, String birthdate) {
-        super(name, address, fiscal_number, birthdate);
+    
+    public void CalculateAge() {
+        // setup
+        LocalDate birthDate = LocalDate.of(1961, 5, 17);
+        // exercise
+        int actual = AgeCalculator.calculateAge(birthDate, LocalDate.of(2016, 7, 12));
+        // assert
+        Assert.assertEquals(55, actual);
     }
-
-
     
-
-    
-// verificar se tem mais de 18 anos se não dizer que não pode arrendar
-// verificar se não foi posta uma data futura por erro.     
     
  public int getAge(Date dateOfBirth) {
     int age = 0;
@@ -45,12 +48,12 @@ public class Guest extends People {
         }
     }  
     return age;
-
-//Modificado
-
+}   
     
     
-   
+    
+    
+    
+}    
+    
 }
-}
-
